@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /home/ubuntu/node-model
+    destination: /home/ubuntu
     overwrite: true
 hooks:
   BeforeInstall:
