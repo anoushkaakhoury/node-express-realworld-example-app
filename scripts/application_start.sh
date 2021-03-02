@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/node-model
+cd /home/ubuntu
 #npm --prefix /home/ubuntu/app.js start
 sudo npm start 
 #npm  --prefix /home/ubuntu/app.js start
