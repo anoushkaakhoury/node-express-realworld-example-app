@@ -5,7 +5,7 @@ env:
     
 phases:
   install:
-    - nodejs: 12
+      -nodejs: 12
       
       
   build:
