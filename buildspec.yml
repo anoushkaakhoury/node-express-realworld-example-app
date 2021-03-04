@@ -1,18 +1,17 @@
 version: 0.2
 env:
- parameter-store:
+  parameter-store:
     MONGO_EP: mongo_ep
     
 phases:
   install:
-      -nodejs: 12
+    - nodejs: 12
       
       
   build:
     commands:
       - npm install
       - echo "hello"
-      - npm install pm2 -g
       - sed -i "s|localhost|${MONGO_EP}|g" app.js
       #- echo "mongo_ep=$mongo_ep" app.js 
       
