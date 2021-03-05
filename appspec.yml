@@ -3,8 +3,12 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu
-    overwrite: true
+    #overwrite: true
 hooks:
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+      timeout: 300
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
