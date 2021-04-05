@@ -19,4 +19,7 @@ phases:
       - docker push 421320058418.dkr.ecr.ap-south-1.amazonaws.com/mern-docker-a:latest
 
 artifacts:
-    files: imagedefinitions.json     
+  name: test-artifact
+  files:
+     - imagedefinitions.json
+  discard-paths: no   
