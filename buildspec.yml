@@ -17,7 +17,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 421320058418.dkr.ecr.ap-south-1.amazonaws.com/mern-docker-a:latest
-      
+
 artifacts:
-  files:
-    - '**/*'     
+    files: imagedefinitions.json     
