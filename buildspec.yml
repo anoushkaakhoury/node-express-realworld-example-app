@@ -17,6 +17,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 421320058418.dkr.ecr.ap-south-1.amazonaws.com/mern-docker-a:latest
+      - printf '[{"name":"mern-docker-a","imageUri":"%s"}]' 421320058418.dkr.ecr.ap-south-1.amazonaws.com/mern-docker-a:latest > imagedefinitions.json
 
 artifacts:
   name: test-artifact
