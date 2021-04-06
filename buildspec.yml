@@ -2,6 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - sed -i "s|mongo_ep|${MONGO_EP}|g" app.js
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 421320058418.dkr.ecr.ap-south-1.amazonaws.com
 
